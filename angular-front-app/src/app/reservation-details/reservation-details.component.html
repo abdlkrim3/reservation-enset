@@ -1,0 +1,20 @@
+<div class="p-3">
+  <div class="card">
+    <div class="card-body">
+      <h2>Détails de la Reservation</h2>
+      <p>ID: {{ reservation?.id }}</p>
+      <p>Nom: {{ reservation?.name }}</p>
+      <p>Contexte: {{ reservation?.context }}</p>
+      <p>Date: {{ reservation?.date }}</p>
+      <p>Durée: {{ reservation?.duration }}</p>
+      <p>Ressource ID: {{ reservation?.ressourceId }}</p>
+      <p>Personne ID: {{ reservation?.personneId }}</p>
+          <td>
+            <button class="btn btn-primary" routerLink="/ressource">Delete</button>
+          </td>
+          <td>
+            <button class="btn btn-primary" routerLink="/ressource">Update</button>
+          </td>
+    </div>
+  </div>
+</div>
