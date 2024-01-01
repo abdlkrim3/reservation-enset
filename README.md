@@ -128,6 +128,6 @@ The project consists of the following microservices:
 8. Reservation Management:
 <img src="images/8.png" ><br>
 
-9. Reservation Management:
+9. Users Management:
 <img src="images/9.png" ><br>
 
