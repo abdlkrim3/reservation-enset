@@ -1,6 +1,7 @@
 # Reservation and Resource Management with Microservices
 
-This project aims to develop an application based on a microservices architecture to manage resource reservations. Each reservation is tied to a single resource, and each resource is defined by an ID, a name, and a type (MATERIEL_INFO, MATERIEL_AUDIO_VISUEL). Reservations, made by individuals, are defined by an ID, a name, a context, a date, and a duration.
+I developed this project with the goal of creating an application using a microservices architecture to handle resource reservations. In this setup, each reservation corresponds to a specific resource, and each resource is characterized by an ID, a name, and a type (MATERIEL_INFO, MATERIEL_AUDIO_VISUEL). Individuals initiate reservations, which are defined by an ID, a name, a context, a date, and a duration.
+Each reservation is initiated by an individual, and a person is defined by an ID, a name, an email, and a role.
 
 ## Technical Architecture of the Project
 
@@ -21,13 +22,13 @@ The project consists of the following microservices:
 
 3. **Gateway-Service (Gateway Service)**
    - Based on Spring Cloud Gateway to route requests to the corresponding microservices.
-   - Integrates with Eureka Server or Consul Discovery for service discovery.
+   - Integrates with Eureka Server for service discovery.
 
 4. **Discovery-Service (Discovery Microservice)**
-   - Uses Eureka Server or Consul Discovery for microservices discovery in the architecture.
+   - Uses Eureka Server  for microservices discovery in the architecture.
 
 5. **Config-Service (Configuration Microservice)**
-   - Uses Spring Cloud Config or Consul Config for centralized configuration management.
+   - Uses Spring Cloud Config for centralized configuration management.
 
 6. **Angular-Front-App (Angular-based Frontend Application)**
    - Develops a user-friendly interface for viewing, creating, updating, and deleting reservations.
@@ -35,7 +36,7 @@ The project consists of the following microservices:
 
 ## Development and Testing of Microservices
 
-- Microservices development includes configuring entities, DAO, services, DTO, REST controllers, Feign clients, and necessary configurations.
+- Microservices development includes configuring entities, services, REST controllers, Feign clients, and necessary configurations.
 
 - Application security is implemented using Oauth2 and OIDC, with Keycloak as the identity provider.
 
@@ -44,8 +45,6 @@ The project consists of the following microservices:
 ## Documentation Generation and Error Handling
 
 - Utilizes OpenAPIDoc (Swagger) specification to generate RESTful services documentation.
-
-- Implements circuit breakers based on Resilience4J to ensure fault tolerance and resilience of microservices.
 
 ## Deployment with Docker and Docker Compose
 
