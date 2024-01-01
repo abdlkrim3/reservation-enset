@@ -12,12 +12,21 @@
           <td>{{r.id}}</td>
           <td>{{r.name}}</td>
           <td>{{r.type}}</td>
-          <td>
+          <!--<td>
             <button class="btn btn-primary"(click)="reserveResource(r.id)" routerLink="/reservationById">Reserve</button>
-          </td>
+          </td>-->
         </tr>
         </tbody>
       </table>
+      <td>
+        <button class="btn btn-primary" routerLink="/reservationById">Add</button>
+      </td>
+      <td>
+        <button class="btn btn-primary"  routerLink="/reservationById">Update</button>
+      </td>
+      <td>
+        <button class="btn btn-primary" routerLink="/reservationById">Delete</button>
+      </td>
     </div>
   </div>
 
